@@ -1,8 +1,8 @@
 <div class="container flat-index">
   <h3>All our flats (<%= @flats.count %>)</h3>
-  <div class="row">
+  <div class="row justify-content-around">
     <% @flats.each do |flat| %>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class='flat-cards'>
           <%= link_to flat_path(flat) do %>
             <div class="flat-card">
